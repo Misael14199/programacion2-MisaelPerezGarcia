@@ -52,12 +52,14 @@ def obtener_texto():
     
 
 etiqueta = tk.Label(ventana, text="Texto ingresado: ")
+etiqueta.place(x=10, y=300)
 etiqueta.pack()
 
 cuadro_texto = tk.Entry(ventana, width=30)
 cuadro_texto.pack()
 
 boton = tk.Button(ventana, text="Obtener Texto", command=obtener_texto)
+boton.place(x=10, y=350)
 boton.pack()
 
 
