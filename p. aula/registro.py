@@ -65,16 +65,23 @@ claver.place(x = 400, y = 456)
 #ingreso de datos por el usuario
 
 
-nombre1r = tk.Entry(ventanar, width=25, font=20)
+nombre1r = tk.Entry(ventanar, width=25, font=20, bg="black", foreground="white", border=0)
 nombre1r.place(x = 400, y = 244, height=22)
-apellido1r = tk.Entry(ventanar, width=25, font=20)
+apellido1r = tk.Entry(ventanar, width=25, font=20, bg="black", foreground="white", border=0)
 apellido1r.place(x = 400, y = 303, height=22)
-correo1r = tk.Entry(ventanar, width=35, font=20)
+correo1r = tk.Entry(ventanar, width=35, font=20, bg="black", foreground="white", border=0)
 correo1r.place(x = 400, y = 363, height=22)
-nombre_de_usuario1r = tk.Entry(ventanar, width=25, font=20)
+nombre_de_usuario1r = tk.Entry(ventanar, width=25, font=20, bg="black", foreground="white", border=0)
 nombre_de_usuario1r.place(x = 400, y = 424, height=22)
-clave1r = tk.Entry(ventanar, width=30, font=20)
+clave1r = tk.Entry(ventanar, width=30, font=20, bg="black", foreground="white", border=0)
 clave1r.place(x = 400, y = 484, height=22)
+
+
+tk.Frame(ventanar, width=320, height=2, bg="white").place(x=400, y=265)
+tk.Frame(ventanar, width=320, height=2, bg="white").place(x=400, y=325)
+tk.Frame(ventanar, width=320, height=2, bg="white").place(x=400, y=384)
+tk.Frame(ventanar, width=320, height=2, bg="white").place(x=400, y=445)
+tk.Frame(ventanar, width=320, height=2, bg="white").place(x=400, y=505)
 
 
 
@@ -87,7 +94,7 @@ def registro():
     nombre_de_usuario2 = nombre_de_usuario1r.get()
     clave2 = clave1r.get()
 
-botonr = tk.Button(ventanar, text = "Registrarse", command = registro, font=("Cooper Black", 18), borderwidth=5.2)
+botonr = tk.Button(ventanar, text = "Registrarse", command = registro, font=("Cooper Black", 18), border=5)
 botonr.place(x = 555, y = 550) 
 
 
@@ -96,6 +103,8 @@ frame_logor = tk.Frame(ventanar, bd=0, width=300, relief=tk.SOLID, padx=0, pady=
 frame_logor.pack(side=tk.LEFT, expand=tk.NO, fill=tk.BOTH)
 labelr = tk.Label(frame_logor, image=iconor, bg="#F4F5F7")
 labelr.place(x=0, y=0, relwidth=1, relheight=1)
+
+
 
 
 ventanar.mainloop()
