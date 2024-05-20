@@ -35,6 +35,8 @@ fr3.place(x=35, y=380, width=950, height=240)
 #titulos y estructura frame 2
 titulop = tk.Label(fr2, text="Titulo del producto que quieres comprar", font=("Cooper Black", 20), foreground="black", bg="white").place(x=10, y=5)
 titulo_cantidad = tk.Label(fr2, text="cantidad", font=("Cooper Black", 17), foreground="black", bg="white").place(x=20, y=190)
+txtprecio = tk.Label(fr2, text="precio: ",  font=("Cooper Black", 19), foreground="black", bg="white").place(x=20, y=120)
+precio = tk.Label(fr2, text="50.000",  font=("Cooper Black", 23), foreground="black", bg="white").place(x=120, y=116)
 
 
 #titulos y estructura frame 3
